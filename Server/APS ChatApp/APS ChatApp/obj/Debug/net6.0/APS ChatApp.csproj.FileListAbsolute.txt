@@ -1,0 +1,51 @@
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\appsettings.json
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.exe
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.deps.json
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.runtimeconfig.json
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.dll
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.pdb
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.csproj.AssemblyReference.cache
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.AssemblyInfoInputs.cache
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.AssemblyInfo.cs
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\scopedcss\bundle\APS ChatApp.styles.css
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.dll
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\refint\APS ChatApp.dll
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.pdb
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.genruntimeconfig.cache
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\ref\APS ChatApp.dll
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.csproj.CopyComplete
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Bruno\OneDrive\Área de Trabalho\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.MvcApplicationPartsAssemblyInfo.cs
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\appsettings.Development.json
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\appsettings.json
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.exe
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.deps.json
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.runtimeconfig.json
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.dll
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.pdb
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.csproj.AssemblyReference.cache
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.AssemblyInfoInputs.cache
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.AssemblyInfo.cs
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.csproj.CoreCompileInputs.cache
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.MvcApplicationPartsAssemblyInfo.cache
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\scopedcss\bundle\APS ChatApp.styles.css
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.csproj.CopyComplete
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.dll
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\refint\APS ChatApp.dll
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.pdb
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\APS ChatApp.genruntimeconfig.cache
+C:\APS_5Semestre\Server\APS ChatApp\APS ChatApp\obj\Debug\net6.0\ref\APS ChatApp.dll
