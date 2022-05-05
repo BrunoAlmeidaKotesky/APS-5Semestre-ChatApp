@@ -2,8 +2,10 @@ using APS_ChatApp.Handlers;
 using APS_ChatApp.Manager;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls("https://localhost:5001");
 builder.Services.AddControllers();
 builder.Services.AddWebSocketManager();
+
 var app = builder.Build();
 
 var serviceScopeFactory = app.Services.GetRequiredService<IServiceScopeFactory>();

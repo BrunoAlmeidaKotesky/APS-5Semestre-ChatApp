@@ -1,11 +1,12 @@
 import { ChangeEvent, useState, useMemo, useEffect } from 'react';
 import './App.css'
+import { WEBSOCKET_URL } from './constants';
 
 function App() {
-  const [inputMsg, setMessage] = useState("");
+  const [inputMsg, setMessage] = useState<string>("");
   const [svMessage, setServerMessage] = useState("");
 
-  const ws = useMemo(() => new WebSocket("wss://localhost:7291/ws"), []);
+  const ws = useMemo(() => new WebSocket(WEBSOCKET_URL), []);
 
   useEffect(() => {
     ws.onmessage = (ev) => {
