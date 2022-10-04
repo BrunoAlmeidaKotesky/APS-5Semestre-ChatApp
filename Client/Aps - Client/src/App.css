@@ -1,5 +1,16 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow: auto;
+}
+
 .App {
   text-align: center;
+  background-color: #e3ffe8;
+  overflow: auto;
+  height: 100%;
 }
 
 .App-logo {
@@ -37,6 +48,59 @@
   }
 }
 
-button {
+.loginButton {
   font-size: calc(10px + 2vmin);
+  background-color: rgb(99, 220, 34);
+  border-radius: 40px;
+  border: 1px solid rgb(0, 97, 42);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.loginButton:disabled {
+  background-color: rgb(9, 198, 91);
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(110, 105, 105);
+  cursor: unset;
+}
+
+
+.chatContainer {
+  background-color: rgba(192, 236, 116, 0.895);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 80vw;
+  display: grid;
+  height: 80vh;
+  grid-template-rows: auto 40px;
+}
+
+.chatBoxList {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.sendMessageContainer {
+  background: #e3e3e3cc;
+  width: 50%;
+  border-radius: 40px;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  padding: 4px;
+  position: sticky;
+}
+
+.sendMessageContainer input {
+  margin-left: 12px;
+}
+
+.sendMessageContainer button {
+  background-color: white;
+  color: black;
+  border: 0.2px solid rgb(243, 239, 239);
+  font-size: 1em;
+  cursor: pointer;
 }

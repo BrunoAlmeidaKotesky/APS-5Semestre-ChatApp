@@ -8,9 +8,7 @@ Docuentação ainda será adicionada.
 ### Tecnologias Utilizadas:
 
 - Servidor:
-    - C# 10, .NET Core 6.0
-    - Visual Studio 2022
-    - Técnologia de Websockets nativas do .Net
+    - Python 3.9
 - Cliente:
     - Aplicação em [React](https://pt-br.reactjs.org/) `17.0.2` gerada atráves do [Vite](https://vitejs.dev/)
     - Utilizando [Typescript](https://www.typescriptlang.org/) `4.6.2`
@@ -18,13 +16,10 @@ Docuentação ainda será adicionada.
 
 ### Requisitos pra rodar:
 
-- Servidor:
-    - Necessário Visual Studio 2022
-    - .NET SDK instalado.
-    - Executar e compilar o programa pelo Visual Studio 2022 ou executando diretamente o executável em `Server\APS ChatApp\APS ChatApp\bin\Debug\net6.0\APS ChatApp.exe`
-    - O executável inicia na porta `5001`
+- Servidor: Rodar script `server.py` 
+
 - Cliente:
-    - NodeJS a partir da versão ^12.18.3
+    - NodeJS a partir da versão ^14.18.0
     - `npm` ou `yarn instalado`
     - `npm install` ou `yarn install` para criar os NODE_MODULES
     - `vite` instalado globalmente (npm i vite -g)

@@ -1,43 +1,87 @@
-import { ChangeEvent, useState, useMemo, useEffect } from 'react';
-import './App.css'
+import { useState, useCallback, useEffect, useMemo } from 'react';
+import { useNavigate } from 'react-router';
+import { useSearchParams } from 'react-router-dom';
+import useWebSocket, { ReadyState } from 'react-use-websocket';
 import { WEBSOCKET_URL } from './constants';
+import { MessageBlock } from './MessageBlock';
+import { useChatStore } from './store';
 
-function App() {
-  const [inputMsg, setMessage] = useState<string>("");
-  const [svMessage, setServerMessage] = useState("");
-
-  const ws = useMemo(() => new WebSocket(WEBSOCKET_URL), []);
-
-  useEffect(() => {
-    ws.onmessage = (ev) => {
-      setServerMessage(ev.data);
-    }
-  }, []);
-
-  const onSendMessage = (ev: ChangeEvent<HTMLInputElement>) => {
-    const value = ev.target.value;
-    setMessage(value);
-    ws.send(value);
-  }
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div>Server Message: {svMessage}</div>
-        <input type="text" value={inputMsg} onChange={onSendMessage}/>
-        <p>
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+interface IMessageData {
+  room: string;
+  user: string;
+  message: string;
 }
 
-export default App
+const Chat = () => {
+  const userName = useChatStore(state => state.userName);
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const [messageHistory, setMessageHistory] = useState<MessageEvent[]>([]);
+  const [currentMessage, setCurrentMessage] = useState('');
+  const { lastMessage, readyState, sendJsonMessage, getWebSocket } = useWebSocket(WEBSOCKET_URL);
+
+  useEffect(() => { 
+    if (!userName) return navigate('/'); 
+    //Disconnect from websocket if the server is closed
+    document.addEventListener('unload', () => {
+      const wb = getWebSocket();
+      wb.close();
+    });
+  }, []);
+
+  useEffect(() => {
+    if (lastMessage !== null) {
+      setMessageHistory((prev) => prev.concat(lastMessage as any));
+    }
+  }, [lastMessage]);
+
+  const handleClickSendMessage = useCallback(() => {
+    if(readyState === ReadyState.OPEN && currentMessage) {
+      sendJsonMessage({room: searchParams.get('sala'), user: userName, message: currentMessage});
+      setCurrentMessage('');
+    }
+  }, [currentMessage, readyState]);
+
+  const connectionStatus = {
+    [ReadyState.CONNECTING]: 'Conectando...',
+    [ReadyState.OPEN]: 'Aberta',
+    [ReadyState.CLOSING]: 'Fechando...',
+    [ReadyState.CLOSED]: 'Fechada',
+    [ReadyState.UNINSTANTIATED]: 'Indefinida',
+  }[readyState];
+
+  const btnDisabled = useMemo(() => readyState !== ReadyState.OPEN || !currentMessage, [readyState, currentMessage]);
+
+  return (
+    <div>
+      <p>Status da conexão: {connectionStatus}</p>
+      <div className='chatContainer'>
+        <div className='chatBoxList'>
+          {messageHistory.map((message, idx) => {
+            const parsedData: IMessageData = JSON.parse(message.data);
+            const isCurrentUser = parsedData.user === userName;
+            return (
+              <MessageBlock 
+                isCurrentUser={isCurrentUser} 
+                userName={parsedData.user}key={idx}>
+                {parsedData.message}
+              </MessageBlock>
+            )
+          })}
+        </div>
+        <div className='sendMessageContainer'>
+          <input type="text" value={currentMessage} onChange={(e) => {
+            setCurrentMessage(e.target.value);
+          }} />
+          <button
+            style={{color: btnDisabled ? 'gray' : 'black'}}
+            disabled={btnDisabled} 
+            onClick={handleClickSendMessage}>Enviar
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Chat;

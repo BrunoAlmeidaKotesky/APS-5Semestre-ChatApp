@@ -1,2 +1,2 @@
 
-export const WEBSOCKET_URL = 'wss://localhost:5001/ws';
+export const WEBSOCKET_URL = 'ws://localhost:8765';
