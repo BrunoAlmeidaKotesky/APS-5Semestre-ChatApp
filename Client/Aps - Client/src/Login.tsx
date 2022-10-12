@@ -24,9 +24,7 @@ export const Login = () => {
                 }} />
             </div>
             <div style={{ display: 'grid', gap: 8, width: '100%', placeContent: 'center', margin: '0 auto', marginTop: 12 }}>
-                <button {...defaultBtnProps(1)}>Meio Ambiente 1</button>
-                <button {...defaultBtnProps(2)}>Meio Ambiente 2</button>
-                <button {...defaultBtnProps(3)}>Meio Ambiente 3</button>
+                <button {...defaultBtnProps(1)}>Entrar no chat</button>
             </div>
         </div>
     );

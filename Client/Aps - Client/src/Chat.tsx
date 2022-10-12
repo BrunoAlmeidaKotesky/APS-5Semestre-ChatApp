@@ -7,7 +7,6 @@ import { MessageBlock } from './MessageBlock';
 import { useChatStore } from './store';
 
 interface IMessageData {
-  room: string;
   user: string;
   message: string;
 }
