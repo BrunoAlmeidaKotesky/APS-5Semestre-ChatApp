@@ -1,8 +1,5 @@
 ## APS Unip - 5 Semestre (Chat-App)
 
-Grupo e aplicação ainda sem nome no momento.
-Docuentação ainda será adicionada.
-
 * Repositório: https://github.com/BrunoAlmeidaKotesky/APS-5Semestre-ChatApp
 
 ### Tecnologias Utilizadas:
@@ -21,7 +18,7 @@ Docuentação ainda será adicionada.
 - Cliente:
     - NodeJS a partir da versão ^14.18.0
     - `npm` ou `yarn instalado`
-    - `npm install` ou `yarn install` para criar os NODE_MODULES
-    - `vite` instalado globalmente (npm i vite -g)
+    - `npm install` ou `yarn install` dentro da pasta `Client/Aps - Client` para gerar os NODE_MODULES
+    - `vite` instalado globalmente (`npm i vite -g`)
     - Na pasta `APS_5Semestre\Client\Aps - Client` rodar `npm run dev` ou `yarn dev`
     - Mudar se necessário a constante `WEBSOCKET_URL` em `Client\Aps - Client\src\constants.ts` se necessário, para conectar-se corretamente ao servidor.

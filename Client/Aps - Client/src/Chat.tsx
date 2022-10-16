@@ -6,10 +6,7 @@ import { WEBSOCKET_URL } from './constants';
 import { MessageBlock } from './MessageBlock';
 import { useChatStore } from './store';
 
-interface IMessageData {
-  user: string;
-  message: string;
-}
+interface IMessageData { user: string; message: string; }
 
 const Chat = () => {
   const userName = useChatStore(state => state.userName);
@@ -21,7 +18,6 @@ const Chat = () => {
 
   useEffect(() => { 
     if (!userName) return navigate('/'); 
-    //Disconnect from websocket if the server is closed
     document.addEventListener('unload', () => {
       const wb = getWebSocket();
       wb.close();
@@ -29,9 +25,8 @@ const Chat = () => {
   }, []);
 
   useEffect(() => {
-    if (lastMessage !== null) {
+    if (lastMessage !== null)
       setMessageHistory((prev) => prev.concat(lastMessage as any));
-    }
   }, [lastMessage]);
 
   const handleClickSendMessage = useCallback(() => {
@@ -40,7 +35,6 @@ const Chat = () => {
       setCurrentMessage('');
     }
   }, [currentMessage, readyState]);
-
   const connectionStatus = {
     [ReadyState.CONNECTING]: 'Conectando...',
     [ReadyState.OPEN]: 'Aberta',
@@ -48,7 +42,6 @@ const Chat = () => {
     [ReadyState.CLOSED]: 'Fechada',
     [ReadyState.UNINSTANTIATED]: 'Indefinida',
   }[readyState];
-
   const btnDisabled = useMemo(() => readyState !== ReadyState.OPEN || !currentMessage, [readyState, currentMessage]);
 
   return (
@@ -60,9 +53,7 @@ const Chat = () => {
             const parsedData: IMessageData = JSON.parse(message.data);
             const isCurrentUser = parsedData.user === userName;
             return (
-              <MessageBlock 
-                isCurrentUser={isCurrentUser} 
-                userName={parsedData.user}key={idx}>
+              <MessageBlock isCurrentUser={isCurrentUser} userName={parsedData.user} key={idx}>
                 {parsedData.message}
               </MessageBlock>
             )
@@ -74,13 +65,11 @@ const Chat = () => {
           }} />
           <button
             style={{color: btnDisabled ? 'gray' : 'black'}}
-            disabled={btnDisabled} 
-            onClick={handleClickSendMessage}>Enviar
+            disabled={btnDisabled} onClick={handleClickSendMessage}>Enviar
           </button>
         </div>
       </div>
     </div>
   );
 };
-
 export default Chat;

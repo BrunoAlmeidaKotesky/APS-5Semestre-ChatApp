@@ -17,7 +17,7 @@ async def on_client_connected(socket, path: str) -> None:
     except websockets.exceptions.ConnectionClosedOK as er2:
         print(f"Cliente desconectado: {socket.remote_address}", er2)
     finally:
-        print(f"Cliente desconectado: {socket.remote_address}", er2)
+        print(f"Cliente desconectado: {socket.remote_address}")
         clients.remove(socket)
 
 start_server = websockets.serve(on_client_connected, "localhost", PORT)
